@@ -3,7 +3,7 @@ var add= function(side1, side2, side3) {
 }
 var side1 =prompt("Insert first side:");
 var side2 =prompt("Insert second side:");
-var side3 =prompt("Insert third side:")
+var side3 =prompt("Insert third side:");
 
 if (side1==side2 && side1==side3) {
   alert("Equilateral triangle")
