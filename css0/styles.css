@@ -5,3 +5,9 @@ h1 {
   font-family: fantasy;
   font-weight: bold;
 }
+img {
+  float: right;
+}
+h4 {
+  color: blue
+}
