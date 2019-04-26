@@ -14,3 +14,6 @@ if (side1==side2 && side1==side3) {
   alert("A triangle CANNOT be formed!")
 }
 }
+<script>
+<button onclick="location.reload();">Refresh Page</button>
+</script>
