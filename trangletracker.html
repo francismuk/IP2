@@ -5,43 +5,51 @@
     <link rel="stylesheet" href="css0/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
-  <body>
-    <h1>Triangle Tracker</h1>
-    <p>There are various types of triangles and this is determined by the dimensions of the sides.This Triangle tracker is helpful in knowing the type of any subject triangle. The various types of triangles are mentioned below: </p>
+  <body style="background-image:url(https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131_960_720.jpg)">
+    <h1><strong>Triangle Tracker</strong></h1>
+    <p>There are various types of triangles and this is determined by the dimensions of the sides.This Triangle tracker is helpful in knowing the type of any subject triangle. The various types of triangles are mentioned below: (Click the links for more information) </p>
     <div class="container">
-      <div class="card">
-        <div class="jumbotron">
-          <div class="row">
-            <div class="col-md-4">
-              <p><img src="images/equilateral.png" alt="Equilateral" height="170" width="170"><strong>Equilateral Triangle: </strong> <em>In geometry, an equilateral triangle is a triangle in which all three sides are equal. In the familiar Euclidean geometry, an equilateral triangle is also equiangular; that is, all three internal angles are also congruent to each other and are each 60°.</em></p>
-            </div>
-            <div class="col-md-4">
-              <p><img src="images/isosoles.png" alt="isosoles" height="170" width="170"><strong>An Isosoles Triangle: </strong> <em>An isosceles triangle is a triangle with (at least) two equal sides. In the figure above, the two equal sides have length and the remaining side has length . This property is equivalent to two angles of the triangle being equal. An isosceles triangle therefore has both two equal sides and two equal angles.</em></p>
-            </div>
-            <div class="col-md-4">
-              <p><img src="images/scarlene.png" alt="scarlene" height="170" width="170"><strong>Scarlene Triangle: </strong><em>A scalene triangle is a triangle that has three unequal sides, such as the one illustrated above.</em></p>
-            </div>
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-4">
+            <p><img src="images/equilateral.png" alt="Equilateral" height="170" width="170"><strong><a href="https://en.wikipedia.org/wiki/Equilateral_triangle">Equilateral Triangle:</a></strong> <em>In geometry, an equilateral triangle is a triangle in which all three sides are equal. In the familiar Euclidean geometry, an equilateral triangle is also equiangular; that is, all three internal angles are also congruent to each other and are each 60°.</em></p>
+          </div>
+          <div class="col-md-4">
+            <p><img src="images/isosoles.png" alt="isosoles" height="170" width="170"><strong><a href="https://en.wikipedia.org/wiki/Isosceles_triangle">An Isosoles Triangle:</a></strong><em>An isosceles triangle is a triangle with (at least) two equal sides. In the figure above, the two equal sides have length and the remaining side has length . This property is equivalent to two angles of the triangle being equal. An isosceles triangle therefore has both two equal sides and two equal angles.</em></p>
+          </div>
+          <div class="col-md-4">
+            <p><img src="images/scarlene.png" alt="scarlene" height="170" width="170"><strong><a href="https://en.wikipedia.org/wiki/Scarlene_triangle">Scarlene Triangle: </a></strong><em>A scalene triangle is a triangle that has three unequal sides, such as the one illustrated above.</em></p>
           </div>
         </div>
       </div>
     </div>
 
-
-    <br>
-
-    </br>
-
+    <br>    </br>
+    <div class="important">
     <form class="form">
     <script src="js/scripts.js" charset="utf-8"></script>
-      <p><label for="number1">Enter first side:</label></p>
-      <input type="number" name="number1" placeholder="number1" id="number1">
-      <p><label for="side2"></label>Enter second side:</p>
-      <input type="number" name="number2" placeholder="number2" id="number2">
-      <p><label for="side3">Enter third side:</label></p>
-      <input type="number" name="number3" placeholder="number3" id="number3">
-      <p> <input type="button" name="button1" value="Get results"> </p>
-    </form>
 
+      <p><label for="number1"><strong>Enter first side:</strong></label></p>
+      <input type="number" name="number1" placeholder="dimension 1" id="number1">
+      <br>
+      </br>
+      <p><label for="side2"></label><strong>Enter second side:</strong></p>
+      <input type="number" name="number2" placeholder="dimension 2" id="number2">
+      <br>
+      </br>
+      <p><label for="side3"> <strong>Enter third side:</strong></label></p>
+      <input type="number" name="number3" placeholder="dimension 3" id="number3">
+      <br>
+      </br>
+      <p> <input type="button" name="button1" value="Get results" onclick="results()"></p>
+      <p> <input type="button" name="button2" value="Refresh"></p>
+
+    </form>
+    </div>
+    <footer>
+      <p>Please contact me for more information</p>
+      <p>mukuha58@gmail.com</p>
+    </footer>
 
   </body>
 </html>
