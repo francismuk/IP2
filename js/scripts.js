@@ -1,19 +1,37 @@
-function result() {
-var side1 =parseInt(document.getElementById('side1').value);
-var side2 =parseInt(document.getElementById('side2').value);
-var side3 =parseInt(document.getElementById('side3').value);
-var answer= document.getElementById('answer')
-var sum1 = side1 + side2;
-var sum2 = side1 + side3;
-var sum3 = side2 + side3;
+function tracker(){
+  /*USER INTERFACE LOGIC*/
 
-if (side1===side2 && side1===side3) {
-  answer.textContent="Equilateral triangle"
-} else if (side1===side2 || side1===side3 || side2===side3) {
-  answer.textContent=  "Isosceles triangle")
-} else if (side1!==side2 && side1!==side3 && side2!==side3) {
-  answer.textContent="Scalene"
-} else ( sum1>side3 && sum3>side1 && sum2>side2) {
-  answer.textContent="A triangle CANNOT be formed!"
+var input1 =document.getElementById('sideA').value;
+var input2 =document.getElementById('sideB').value;
+var input3 =document.getElementById('sideC').value;
+var sidea=parseFloat(input1);
+var sideb=parseFloat(input2);
+var sidec=parseFloat(input3);
+var sides=[sidea,sideb,sidec];
+var type=["Equilateral triangle", "Isosoles triangle", "Scarlene triangle", "Not a triangle"]
+
+if(sides[0] <=0 || sides[1] <=0 || sides[2] <=0){
+  var firstOutput=sides[0]+" "+sides[1]+" "+sides[2]+" "+type[3];
+  document.getElementById("trackOutput").innerHTML=firstOutput;
+}
+else if(sides[0]===sides[1] && sides[1] === sides[2] && sides[2] === sides[0]) {
+  var secondOutput=sides[0]+" "+sides[1]+" "+sides[2]+" "+type[0];
+  document.getElementById("trackOutput").innerHTML=secondOutput;
+}
+else if(sides[0]===sides[1] || sides[0] === sides[2] || sides[1] === sides[2]) {
+  var thirdOutput=sides[0]+" "+sides[1]+" "+sides[2]+" "+type[1];
+  document.getElementById("trackOutput").innerHTML=thirdOutput;
+}
+else if(sides[0]!==sides[1] && sides[0] !== sides[2] && sides[2] !== sides[1] && sides[0]+sides[1]>sides[2] && sides[1]+sides[2]>sides[0] && sides[2]+sides[0]>sides[1] ) {
+  var fourthOutput=sides[0]+" "+sides[1]+" "+sides[2]+" "+type[0];
+  document.getElementById("trackOutput").innerHTML=fourthOutput;
+}
+else if(sides[0]+sides[1]<sides[2] || sides[1]+sides[2]<sides[0] && sides[2]+sides[0]<sides[1]) {
+  var fifthOutput=sides[0]+" "+sides[1]+" "+sides[2]+" "+type[3];
+  document.getElementById("trackOutput").innerHTML=fifthOutput;
+}
+else{
+  var sixthOutput=type[3];
+  document.getElementById("trackOutput").innerHTML=sixthOutput;
 }
 }
