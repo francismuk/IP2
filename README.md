@@ -1,6 +1,8 @@
 # {Triangle Tracker}
 #### {This application is a triangle tracker which means that it takes the measurements of the sides of a triangle and gives the result of the type of the triangle}, {21st April 2019}
 #### By **{Francis Wambugu Mukuha}**
+## Author information
+Francis Wambugu Mukuha the author is a full stack development student in moringa school. His cotacts are listed in this file below.
 ## link to the live site
 https://francismuk.github.io/ip2/trangletracker.html
 ## Description
@@ -11,7 +13,7 @@ https://francismuk.github.io/ip2/trangletracker.html
 {This app does not need you to run a server or install dependencies. All you need to do is clone/download it from GIT hub and run it. The app is written in java script so You will need a browser for this for example mozilla or Chrome }
 ## BDD
 |Behaviour                                        |Input      | Output                 |
-|------------------------------------------------:|----------:|-----------------------:|
+|----------------------------------------------  :|----------:|-----------------------:|
 |If the user enters values that are not equal     | 1 2 3     | Scarlene triangle      |
 |if the user enters values that are all equal     | 4 4 4     | Equilateral triangle   |
 |if the user enters two values which add up to    | 4 4 7     | Isosoles triangle      |
