@@ -7,7 +7,7 @@ var sum1 = side1 + side2;
 var sum2 = side1 + side3;
 var sum3 = side2 + side3;
 
-if (side1==side2 && side1==side3) {
+if (side1===side2 && side1===side3) {
   answer.textContent="Equilateral triangle"
 } else if (side1===side2 || side1===side3 || side2===side3) {
   answer.textContent=  "Isosceles triangle")

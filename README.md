@@ -10,13 +10,13 @@ https://francismuk.github.io/ip2/trangletracker.html
 * Stable internet connection
 {This app does not need you to run a server or install dependencies. All you need to do is clone/download it from GIT hub and run it. The app is written in java script so You will need a browser for this for example mozilla or Chrome }
 ## BDD
-|Behaviour                                        |Input      | Output       |
-|------------------------------------------------:|----------:|----------------:|
-|If the user enters values that are not equal     | 1 2 3     | Scarlene triangle
-|if the user enters values that are all equal     | 4 4 4     | Equilateral triangle
-|if the user enters two values which add up to    | 4 4 7     | Isosoles triangle
+|Behaviour                                        |Input      | Output                 |
+|------------------------------------------------:|----------:|-----------------------:|
+|If the user enters values that are not equal     | 1 2 3     | Scarlene triangle      |
+|if the user enters values that are all equal     | 4 4 4     | Equilateral triangle   |
+|if the user enters two values which add up to    | 4 4 7     | Isosoles triangle      |
 less than the third value 
-|if the user enters two values that add up to     | 4 4 9     | This is not a triangle
+|if the user enters two values that add up to     | 4 4 9     | This is not a triangle |
 more than or equal to the third value 
 ## Languages and technologies used
 * HTML
